@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <h3 class="nav">ABOUT ME</h3>
+        <h3 class="nav">SOCIAL-MEDIA</h3>
+        <h3 class="nav">PROJECTS</h3>
+        <h3 class="nav">CONTACT</h3>
+        
+    </div>
+    <div class="aboutme">
+    <h1 class="text name">I'M Vijay Varma</h1>
+    <h3 class="text role">~ frontend developer</h3>
+    <p class="text name11">A motivated and detail-oriented front-end developer<br>
+        with a strong foundation in HTML,CSS and JavaScript.<br>
+        Proficient in designing and developing modern,responsive,<br>
+        and user-friendly web applications</p>
+      <div class="skills">
+     <h2>SKILLS</h2>
+     <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>SQL</li>
+        </ul>
+   
+     </div> 
+     </div> 
+    <img src="./assests/myself.png" height="300px"  width="300px">;
+    
+    <script>
+        let bodyColor=document.getElementsByTagName('body')[0];
+        // let getH1=document.getElementsByTagName('h1')[0];
+        // let getH3=document.getElementsByTagName('h3')[0];
+         let textColor=document.getElementsByClassName('text');
+         for(i=0;i<textColor.length;i++){
+         textColor[i].style.color='white';
+        
+         
+         }
+         let details=document.getElementsByClassName('aboutme')[0];
+          details.style.position='relative';
+          details.style.top="100px";
+          // first
+          textColor[0].style.position="absolute";
+          textColor[0].style.left='100px';
+          
+          // second
+          textColor[1].style.position="absolute";
+          textColor[1].style.left='180px';
+          textColor[1].style.top='50px';
+          // thrid
+          textColor[2].style.position="absolute";
+          textColor[2].style.left='100px';
+          textColor[2].style.top='90px';
+
+          
+
+        bodyColor.style.backgroundColor='black';
+        // image
+        let image=document.getElementsByTagName('img')[0];
+        image.style.position='absolute';
+        image.style.left='55%';
+        image.style.top='30%';
+        image.style.borderRadius='30%';
+
+        let getH2=document.getElementsByTagName('h2')[0];
+        getH2.style.color='white';
+        getH2
+        let list=document.getElementsByTagName('li');
+        for(j=0;j<list.length;j++){
+            list[j].style.color='white';
+        
+        }
+        let skills=document.getElementsByClassName('skills')[0];
+        skills.style.position='relative';
+        skills.style.top='220px';
+        skills.style.left='100px';
+
+        let role=document.getElementsByClassName('role')[0];
+        role.style.color='blue';
+
+        let name11=document.getElementsByClassName('name11');
+        name11[0].style.color='orange';
+        name11[0].style.fontSize='20px';
+
+        let name=document.getElementsByClassName('name')[0];
+        name.style.color='skyblue';
+
+        // working with navbar
+
+        let nav=document.getElementsByClassName('nav');
+        for(k=0;k<nav.length;k++){
+            nav[k].style.color='white';
+        }
+        
+        let navbar=document.getElementsByClassName('navbar')[0];
+        navbar.style.display='flex';
+        navbar.style.gap='60px';
+        navbar.style.justifyContent='flex-end';
+
+        //skills section 
+        let ul=document.getElementsByTagName('ul')[0];
+        ul.style.display='flex';
+        ul.style.gap='20px';
+
+
+    </script>
+</body>
+</html>
